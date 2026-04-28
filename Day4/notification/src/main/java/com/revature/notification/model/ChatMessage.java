@@ -1,25 +1,17 @@
 package com.revature.notification.model;
 
+import java.time.LocalDateTime;
+
 public class ChatMessage {
 
     private String sender;
     private String content;
+    private String type; // JOIN, MESSAGE, LEAVE
+    private LocalDateTime timestamp;
 
-    public ChatMessage() {}
-
-    public String getSender() {
-        return sender;
+    public ChatMessage() {
+        this.timestamp = LocalDateTime.now();
     }
 
-    public void setSender(String sender) {
-        this.sender = sender;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
+    // getters & setters
 }
