@@ -2,6 +2,7 @@ package com.revature.notification.model;
 
 import java.time.LocalDateTime;
 
+
 public class ChatMessage {
 
     private String sender;
@@ -13,5 +14,5 @@ public class ChatMessage {
         this.timestamp = LocalDateTime.now();
     }
 
-    // getters & setters
+
 }
